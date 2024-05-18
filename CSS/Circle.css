@@ -7,19 +7,19 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   background-color: #f2f4fc;
-  
+  margin:70px;
   
 }
 
 div#container{
   background-color: #f2f4fc;
-  margin: 10px 10px;
+  display: grid;
 
   
 }
@@ -39,7 +39,7 @@ div#container{
 
 #navbar{
 display: grid;
-grid-template-columns: repeat(6,2fr);
+grid-template-columns: repeat(6,1fr);
 
 }
 
@@ -81,15 +81,15 @@ grid-template-columns: repeat(6,2fr);
 #contact-btn{
   grid-column-start: 6;
   grid-column-end: 6;
-  font-size: 7px;
   text-shadow:  0px -6px 17px #0000;
   margin: 6px auto;
   width: 10vh;
-  height:5vh;
+  height:2.5vh;
   background-color: #072ac8;
   text-align: center;
   padding: 15px 12px 10px 12px;
   border-radius: 5px;
+  box-sizing: content-box;
 
   
 }
@@ -106,14 +106,18 @@ grid-template-columns: repeat(6,2fr);
   background-color: #072ac8;
   padding: 3px;
   border-radius: 4px;
+  
+}
+.nav-menu a{
+font-size: 1.3vh;
 }
 .article p{
-  font-size:0.5em ;
+  font-size:0.5vh ;
 }
 /* ------------------------------ Intro ------------------------------ */
 .content-block{
   display: grid;
-  grid-template-columns: repeat(6,2fr);
+  grid-template-columns: repeat(6,1fr);
  
 }
 #content{
@@ -132,7 +136,27 @@ grid-template-columns: repeat(6,2fr);
  
 }
 /* ------------------------------ Partners ------------------------------ */
+#partners{
+  width: 10px;
+  height: 100px;
+  
+display:flex;
+justify-content: space-around;
+margin: 0 auto;
+  position: relative;
+  top:30px;
+  animation: 6s infinite linear slidein;
+  
+}
 
+@keyframes slidein {
+  from {left: 0px;}
+  to {left: 150%;}
+}
+#partners img{
+ width:150px;
+ padding-left: 80px;
+}
 /* Your CSS code goes here */
 
 /* ------------------------------ Recent projects ------------------------------ */
@@ -176,13 +200,14 @@ width: 15rem;
   grid-template-columns: repeat(6,2fr);
   grid-template-rows: 50px;
   row-gap: 25px;
+ 
 
   
 
   
 }
 .img-size {
-  width: 20px;
+  width: 20vh;
 }
 div.tetimonial-emoji1 {
 grid-column-start: 1;
@@ -194,8 +219,8 @@ justify-self: left;
 }
 .Client-testimonial-head{
   color:#ffff;
-
-  font-size: 7px;
+margin:20px 10px 0px 20px;
+  font-size: 1.3em;
   grid-column-start: 2;
 grid-column-end: 5;
 text-align: center;
@@ -217,7 +242,7 @@ justify-self: right;
   grid-column-start: 2;
 grid-column-end: 5;
   align-self: center;
-  font-size: 6px;
+  font-size: 1.4em;
   text-align: center;
   color:#FFC600
 
@@ -239,20 +264,21 @@ align-self: left;
     display: flex;
     justify-items: center;
     align-items: center;
-    margin: 0 auto;
-   color:#ffff
+    margin: 10 auto;
+   color:#ffff;
+   width: 100%;
+
     
   }
   .tetimonial-profile p{
     color:white;
-    font-size: 2px;
+    font-size: 0.8em;
   }
 .tetimonial-profile h5{
   
-  font-size: 3px;
+  font-size: 0.8em;
  color: #A2D6F9;
-    width: 60%;
-    margin: 2px;
+    margin: 5px;
 
   }
   .tetimonial-profile img {
