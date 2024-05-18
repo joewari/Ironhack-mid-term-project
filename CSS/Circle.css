@@ -14,11 +14,13 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #f2f4fc;
   
+  
 }
 
 div#container{
   background-color: #f2f4fc;
   margin: 10px 10px;
+
   
 }
 /* ------------------------------------------------------------------------ */
@@ -38,6 +40,7 @@ div#container{
 #navbar{
 display: grid;
 grid-template-columns: repeat(6,2fr);
+
 }
 
 /* ------------------------------ Header ------------------------------ */
@@ -45,9 +48,11 @@ grid-template-columns: repeat(6,2fr);
   display: flex;
  flex-direction: column;
  margin-bottom: 25px;
+
 }
 .Circle-logo{
-  width: 30px;
+  width: 9vh;
+  margin-top: 15px;
   
 }
 #circle-header-logo{
@@ -59,14 +64,17 @@ grid-template-columns: repeat(6,2fr);
 .nav-menu{
   grid-column-start: 2;
   grid-column-end: 5;
-  font-size: 8px;
-  margin: 5px auto;
+  margin-top: 20px ;
+  justify-self: center;
+ 
   
   
 }
 .nav-menu a{
   text-decoration: none;
-  padding: 3px;
+  padding: 30px 7px 7px 7px;
+  font-size: 1.6rem;
+  justify-self: baseline;
   
 
 }
@@ -75,12 +83,12 @@ grid-template-columns: repeat(6,2fr);
   grid-column-end: 6;
   font-size: 7px;
   text-shadow:  0px -6px 17px #0000;
-  margin: 5px auto;
-  width: 47px;
-  height:15px ;
+  margin: 6px auto;
+  width: 10vh;
+  height:5vh;
   background-color: #072ac8;
   text-align: center;
-  padding: 3px;
+  padding: 15px 12px 10px 12px;
   border-radius: 5px;
 
   
@@ -88,7 +96,7 @@ grid-template-columns: repeat(6,2fr);
 #contact-btn a{
   color:#ffff;
   text-decoration: none;
-  text-shadow:  0px -6px 17px #0000;
+  font-size: 1.6vh;
 
   
   
@@ -103,13 +111,54 @@ grid-template-columns: repeat(6,2fr);
   font-size:0.5em ;
 }
 /* ------------------------------ Intro ------------------------------ */
+.content-block{
+  display: grid;
+  grid-template-columns: repeat(6,2fr);
+ 
+}
+#content{
+  grid-column-end: 1;
+  grid-column-end: 2;
+  border: 1px solid red
+}
 
-
+.hero{
+  grid-column-end: 2;
+  grid-column-end: 4;
+  border: 1px solid red
+}
+.hero img{
+  width:12vh;
+ 
+}
 /* ------------------------------ Partners ------------------------------ */
 
 /* Your CSS code goes here */
 
 /* ------------------------------ Recent projects ------------------------------ */
+.Project-Summary{
+  display: flex;
+  flex-direction: column;
+  flex-flow: nowrap;
+  justify-content:space-around;
+  align-content: space-between;
+  align-items: center;
+  justify-items:center;
+  
+ 
+}
+.project img{
+  justify-self: flex-start;
+width: 15rem;
+
+
+
+}
+.project{
+  background-color: #ffffff;
+  font-size: 1em;
+  padding:4px;
+}
 
 /* Your CSS code goes here */
 
@@ -120,12 +169,13 @@ grid-template-columns: repeat(6,2fr);
   background-color: #292E47;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-
+  width: 95%;
+  height: 35rem;
+  margin: 0 auto  ;
   display: grid;
   grid-template-columns: repeat(6,2fr);
-grid-template-rows: 50px;
-row-gap: 25px;
+  grid-template-rows: 50px;
+  row-gap: 25px;
 
   
 
