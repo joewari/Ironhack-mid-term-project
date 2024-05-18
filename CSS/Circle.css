@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto:wght@100;300;400;500&display=swap");
+
+:root {
+  --primary: #072ac8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f2f4fc;
+  
+}
+
+div#container{
+  background-color: #f2f4fc;
+  margin: 10px 10px;
+  
+}
+/* ------------------------------------------------------------------------ */
+/* ------------------------------ START INDEX html ------------------------------ */
+/* ------------------------------------------------------------------------ */
+
+/* ------------------------------ Splash page ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* ------ CIRCULAR ANIMATION ------ */
+
+/* Your CSS code goes here */
+
+/* ------------------------------ Navbar ------------------------------ */
+
+#navbar{
+display: grid;
+grid-template-columns: repeat(6,2fr);
+}
+
+/* ------------------------------ Header ------------------------------ */
+#header{
+  display: flex;
+ flex-direction: column;
+ margin-bottom: 25px;
+}
+.Circle-logo{
+  width: 30px;
+  
+}
+#circle-header-logo{
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+}
+
+.nav-menu{
+  grid-column-start: 2;
+  grid-column-end: 5;
+  font-size: 8px;
+  margin: 5px auto;
+  
+  
+}
+.nav-menu a{
+  text-decoration: none;
+  padding: 3px;
+  
+
+}
+#contact-btn{
+  grid-column-start: 6;
+  grid-column-end: 6;
+  font-size: 7px;
+  text-shadow:  0px -6px 17px #0000;
+  margin: 5px auto;
+  width: 47px;
+  height:15px ;
+  background-color: #072ac8;
+  text-align: center;
+  padding: 3px;
+  border-radius: 5px;
+
+  
+}
+#contact-btn a{
+  color:#ffff;
+  text-decoration: none;
+  text-shadow:  0px -6px 17px #0000;
+
+  
+  
+}
+#content-btn1{
+  color:#ffff;
+  background-color: #072ac8;
+  padding: 3px;
+  border-radius: 4px;
+}
+.article p{
+  font-size:0.5em ;
+}
+/* ------------------------------ Intro ------------------------------ */
+
+
+/* ------------------------------ Partners ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* ------------------------------ Recent projects ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* ------------------------------ Client reviews ------------------------------ */
+
+.testimonial-container {
+  background-image: url("../Assets/Images/testimonial-section-20240516T114456Z-001/testimonial-section/orbit.png" );
+  background-color: #292E47;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(6,2fr);
+grid-template-rows: 50px;
+row-gap: 25px;
+
+  
+
+  
+}
+.img-size {
+  width: 20px;
+}
+div.tetimonial-emoji1 {
+grid-column-start: 1;
+
+justify-self: left;
+
+
+
+}
+.Client-testimonial-head{
+  color:#ffff;
+
+  font-size: 7px;
+  grid-column-start: 2;
+grid-column-end: 5;
+text-align: center;
+align-self: center;
+
+
+}
+.tetimonial-emoji2 {
+  grid-column-start: 6;
+justify-self: right;
+
+}
+
+
+
+
+.Client-testimonial  {
+  
+  grid-column-start: 2;
+grid-column-end: 5;
+  align-self: center;
+  font-size: 6px;
+  text-align: center;
+  color:#FFC600
+
+  
+
+ 
+  
+  
+}
+.tetimonial-emoji3{
+
+
+grid-column-start: 1;
+grid-column-end: 3;
+align-self: left;
+  
+  }
+  .tetimonial-profile {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+   color:#ffff
+    
+  }
+  .tetimonial-profile p{
+    color:white;
+    font-size: 2px;
+  }
+.tetimonial-profile h5{
+  
+  font-size: 3px;
+ color: #A2D6F9;
+    width: 60%;
+    margin: 2px;
+
+  }
+  .tetimonial-profile img {
+  justify-self: center;
+    align-self: center;
+    width: 7vh;
+    border-radius: 60%;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    
+  
+  }
+  
+.tetimonial-emoji5 {
+
+  grid-column-start: 6;
+  grid-column-end: 6;
+
+align-self: right;
+text-align:end
+
+
+  
+  }
+ 
+/* ------------------------------ Services ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* ------------------------------ Questions form ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* ------------------------------ Footer ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------------ END INDEX html ------------------------------ */
+/* ------------------------------------------------------------------------ */
+
+/* -------- */
+/* -------- */
+/* -------- */
+/* -------- */
+
+/* -------------------------------------------------------------------------- */
+/* ------------------------------ START PROJECT html ------------------------------ */
+/* -------------------------------------------------------------------------- */
+
+/* ------------------------------ Project main ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* -------------------------------------------------------------------------- */
+/* ------------------------------ END PROJECT html ------------------------------ */
+/* -------------------------------------------------------------------------- */
+
+/* -------- */
+/* -------- */
+/* -------- */
+/* -------- */
+
+/* ----------------------------------------------------------------------------- */
+/* ------------------------------  START CONTACT html ------------------------------ */
+/* ----------------------------------------------------------------------------- */
+
+/* ------------------------------ Form ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* ----------------------------------------------------------------------------- */
+/* ------------------------------ About html ------------------------------ */
+/* ----------------------------------------------------------------------------- */
+
+/* Your CSS code goes here */
+
+/* ----------------------------------------------------------------------------- */
+/* ------------------------------  END CONTACT html ------------------------------ */
+/* ----------------------------------------------------------------------------- */
+
+/* -------- */
+/* -------- */
+/* -------- */
+/* -------- */
+
+/* --------------------------------------------------------------------------- */
+/* ------------------------------ START MEDIA QUERIES ------------------------------ */
+/* --------------------------------------------------------------------------- */
+
+/* ------------------------- Smaller than 990px (tablet) ------------------------- */
+@media (max-width: 990px) {
+  /* Your CSS code goes here */
+}
+
+/* ------------------------- Smaller than 766px (mobile) ------------------------- */
+@media (max-width: 766px) {
+  /* Your CSS code goes here */
+}
+
+/* ------------------------------ Hamburguer menu ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* ------------------------------ Alert ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* ------------------------------ Sticky scroll bar ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* --------------------------------------------------------------------------- */
+/* ------------------------------ END MEDIA QUERIES ------------------------------ */
+/* --------------------------------------------------------------------------- */
+
+/* -------- */
+/* -------- */
+/* -------- */
+/* -------- */
