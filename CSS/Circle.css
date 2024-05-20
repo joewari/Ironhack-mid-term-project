@@ -115,43 +115,83 @@ font-size: 1.3vh;
   font-size:0.5vh ;
 }
 /* ------------------------------ Intro ------------------------------ */
-.content-block{
+.intro{
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6,2fr);
  
+ height:60vh;
+ margin:40px auto
 }
-#content{
-  grid-column-end: 1;
-  grid-column-end: 2;
-  border: 1px solid red
+.content{
+  grid-column-start:2 ;
+  width: 65vh;
+  height: 50vh;
+font-size: 1.8em;
+  
+  padding: 40px;
 }
 
 .hero{
-  grid-column-end: 2;
-  grid-column-end: 4;
-  border: 1px solid red
+ grid-column-start:4;
+  
+  width: max-content;
+  
+
+
 }
-.hero img{
-  width:12vh;
+
+#hero {
+  position: relative;
+right:-10px;
+top:-60px;
+  width:55vh;
+  height: 60vh;
+  align-items: center;
+
+  
  
 }
+
+#card {
+  width:130px;
+  align-items: center;
+  position: relative;
+  width:35vh;
+ bottom:300px;
+  right:650px;
+}
+
+
+#thumb {
+  position:relative;
+  top:90px;
+right:650px;
+  width:35vh;
+
+
+  align-items: center;
+  
+ 
+}
+
 /* ------------------------------ Partners ------------------------------ */
 #partners{
   width: 10px;
-  height: 100px;
+  height: 400px;
   
 display:flex;
 justify-content: space-around;
-margin: 0 auto;
+
   position: relative;
   top:30px;
   animation: 6s infinite linear slidein;
+  
   
 }
 
 @keyframes slidein {
   from {left: 0px;}
-  to {left: 150%;}
+  to {left: 140%;}
 }
 #partners img{
  width:150px;
@@ -168,6 +208,7 @@ margin: 0 auto;
   align-content: space-between;
   align-items: center;
   justify-items:center;
+  margin: 40px auto 40px auto;
   
  
 }
@@ -195,11 +236,11 @@ width: 15rem;
   background-size: cover;
   width: 95%;
   height: 35rem;
-  margin: 0 auto  ;
+  margin: 30px auto 40px auto  ;
   display: grid;
   grid-template-columns: repeat(6,2fr);
   grid-template-rows: 50px;
-  row-gap: 25px;
+ 
  
 
   
@@ -207,7 +248,7 @@ width: 15rem;
   
 }
 .img-size {
-  width: 20vh;
+  width: 18vh;
 }
 div.tetimonial-emoji1 {
 grid-column-start: 1;
@@ -219,12 +260,12 @@ justify-self: left;
 }
 .Client-testimonial-head{
   color:#ffff;
-margin:20px 10px 0px 20px;
+margin:20px 10px 20px 20px;
   font-size: 1.3em;
   grid-column-start: 2;
 grid-column-end: 5;
 text-align: center;
-align-self: center;
+
 
 
 }
@@ -244,7 +285,8 @@ grid-column-end: 5;
   align-self: center;
   font-size: 1.4em;
   text-align: center;
-  color:#FFC600
+  color:#FFC600;
+  padding-top: 30px;
 
   
 
@@ -253,7 +295,6 @@ grid-column-end: 5;
   
 }
 .tetimonial-emoji3{
-
 
 grid-column-start: 1;
 grid-column-end: 3;
@@ -305,8 +346,45 @@ text-align:end
   }
  
 /* ------------------------------ Services ------------------------------ */
+.our-service{
+display:grid;
+grid-template-columns: repeat(3,1fr);
 
-/* Your CSS code goes here */
+
+line-height: 2em;
+font-weight: 400;
+
+margin: auto auto 50px 70px;
+
+}
+.service-head{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  
+padding: 20px;
+  justify-self: left;
+  margin-bottom:40px;
+  
+
+
+}
+
+#interface-design{
+  width:fit-content;
+  grid-column-end: 2;
+  background-color: #ffffff;
+  padding: 20px;
+}
+#experience-design{
+padding: 20px;
+ background-color: #ffffff;
+ width:fit-content;
+}
+#app-dev{
+padding: 20px;
+ background-color: #ffffff;
+ width:fit-content;
+}
 
 /* ------------------------------ Questions form ------------------------------ */
 
