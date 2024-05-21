@@ -8,21 +8,22 @@
   margin: 0;
   padding: 0;
   box-sizing: content-box;
- 
+
 }
 
 body {
   font-family: "Roboto", sans-serif;
   background-color: #f2f4fc;
-  margin:70px;
-  
+  margin: 70px;
+  overflow-x: hidden;
 }
 
-div#container{
+div#container {
   background-color: #f2f4fc;
 
-  
+
 }
+
 /* ------------------------------------------------------------------------ */
 /* ------------------------------ START INDEX html ------------------------------ */
 /* ------------------------------------------------------------------------ */
@@ -40,58 +41,54 @@ div#container{
 
 
 /* ------------------------------ Header ------------------------------ */
-.header{
+.header {
   display: grid;
-  grid-template-columns: repeat(6,1fr);
-  gap:1rem;
-width: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  width: 100%;
 
 
 
 
 
 }
-#circle-header-logo{
-  
+
+#circle-header-logo {
+
   grid-column: 1;
-  
-  
+
+
 }
 
-.Circle-logo{
-  
+.Circle-logo {}
 
-  
-  
-  
+.nav-menu {
+  grid-column: 3;
+  word-spacing: 0.6rem;
+  min-inline-size: 12.5rem;
+
+
+
+
 }
 
-.nav-menu{
-grid-column: 3;
-word-spacing: 0.6rem;
-min-inline-size: 12.5rem;
- 
- 
-  
-  
-}
-.nav-btn{
+.nav-btn {
   text-decoration: none;
 
   font-size: 1rem;
- 
-  
-  
+
+
+
 
 }
 
 
-#contact-btn{
+#contact-btn {
 
-  
- margin-bottom: 60px;
-grid-column-end: 7;
- 
+
+  margin-bottom: 60px;
+  grid-column-end: 7;
+
   width: 6rem;
   max-height: 2rem;
   background-color: #072ac8;
@@ -100,143 +97,155 @@ grid-column-end: 7;
   border-radius: 5px;
 
 
-  
+
 }
-#contact-btn a{
-  color:#ffff;
+
+#contact-btn a {
+  color: #ffff;
   text-decoration: none;
   font-size: 1rem;
   padding: 0 auto;
 
-  
- 
-  
-  
+
+
+
+
 }
 
 /* ------------------------------ Intro ------------------------------ */
-.intro{
+.intro {
   display: grid;
 
-  grid-template-columns: repeat(3,2fr);
- gap: 1.3rem;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 1.3rem;
 
 
 }
-.content{
-  grid-column-start:2 ;
-  min-width:  14rem;
- line-height: 1.5rem;
-font-size: 0.9rem;
-  
-  
+
+.content {
+  grid-column-start: 2;
+  min-width: 14rem;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+
+
 }
 
-.hero{
- grid-column-start:4;
-  
- 
-  
+.hero {
+  grid-column-start: 4;
+
+
+
 
 
 }
 
 #hero {
   position: relative;
-left:-30px;
-top:-10px;
-  width:10rem;
+  left: -30px;
+  top: -10px;
+  width: 10rem;
   height: 10rem;
   align-items: center;
 
-  
- 
+
+
 }
 
 #card {
-  
+
   align-items: center;
   position: relative;
-  width:5rem;
- bottom:190px;
-  right:40px;
+  width: 5rem;
+  bottom: 190px;
+  right: 40px;
 }
 
 
 #thumb {
-  position:relative;
-  top:-140px;
-right:-40px;
-  width:5rem;
+  position: relative;
+  top: -140px;
+  right: -40px;
+  width: 5rem;
 
 
   align-items: center;
-  
- 
+
+
 }
 
-#content-btn1{
-  color:#ffff;
+#content-btn1 {
+  color: #ffff;
   background-color: #072ac8;
   padding: 3px;
   border-radius: 4px;
   text-decoration: none;
- 
-  
+
+
 }
 
-.content-button a{
+.content-button a {
   text-decoration: none;
-  
+
 }
-.article p{
-  font-size:0.5vh ;
+
+.article p {
+  font-size: 0.5vh;
 }
 
 /* ------------------------------ Partners ------------------------------ */
-#partners{
+#partners {
   width: 10px;
   height: 30px;
-  
-display:grid;
-grid-template-columns: repeat(6,1fr);
-gap:1.2rem;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.2rem;
   position: relative;
-  top:3px;
+  top: 3px;
   animation: 6s infinite linear slidein;
-  
-  
+
+
 }
 
 @keyframes slidein {
-  from {left: 0px;}
-  to {left: 140%;}
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 140%;
+  }
 }
-#partners img{
- width:5rem;
- padding-left: 80px;
+
+#partners img {
+  width: 5rem;
+  padding-left: 80px;
 }
+
 /* Your CSS code goes here */
 
 /* ------------------------------ Recent projects ------------------------------ */
-.Project-Summary{
- display: grid;
- gap:4rem;
- grid-template-columns: repeat(3,1fr);
-  
- 
-}
-.project img{
-
-width: 8rem;
-
-
+.Project-Summary {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(3, 1fr);
+  width: 40px;
 
 }
-.project{
+
+.project img {
+
+  width: 6rem;
+
+
+
+}
+
+.project {
   background-color: #ffffff;
   font-size: 1em;
-  padding:4px;
+  padding: 4px;
 }
 
 /* Your CSS code goes here */
@@ -244,169 +253,200 @@ width: 8rem;
 /* ------------------------------ Client reviews ------------------------------ */
 
 .testimonial-container {
-  background-image: url("../Assets/Images/testimonial-section-20240516T114456Z-001/testimonial-section/orbit.png" );
+  background-image: url("../Assets/Images/testimonial-section-20240516T114456Z-001/testimonial-section/orbit.png");
   background-color: #292E47;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  
- 
+  width: 110%;
+  height: inherit;
   display: grid;
-  grid-template-columns: repeat(6,2fr);
-
- 
- 
-
-  
-
-  
+  grid-template-columns: repeat(6, 2fr);
 }
+
 .img-size {
-  width: 3rem;
+  width: 30%;
 }
+
 div.tetimonial-emoji1 {
-grid-column-start: 1;
-
-justify-self: left;
-
-
-
+  grid-column-start: 1;
+  justify-self: left;
 }
-.Client-testimonial-head{
-  color:#ffff;
 
+.Client-testimonial-head {
+  color: #ffff;
   font-size: 0.4rem;
   grid-column-start: 2;
-grid-column-end: 5;
-text-align: center;
-
-
-
+  grid-column-end: 5;
+  text-align: center;
 }
+
 .tetimonial-emoji2 {
   grid-column-start: 6;
-justify-self: right;
+  justify-self: right;
 
 }
 
-
-
-
-.Client-testimonial  {
-  
+.Client-testimonial {
   grid-column-start: 2;
-grid-column-end: 5;
+  grid-column-end: 5;
   align-self: center;
   font-size: 0.4rem;
   text-align: center;
-  color:#FFC600;
+  color: #FFC600;
   padding-top: 30px;
-
-  
-
- 
-  
-  
 }
-.tetimonial-emoji3{
 
-grid-column-start: 1;
-grid-column-end: 3;
-align-self: left;
-  
-  }
-  .tetimonial-profile {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    margin: 15px auto;
-   color:#ffff;
-   width: 100%;
-
-    
-  }
-  .tetimonial-profile p{
-    color:white;
-    font-size: 0.2rem;
-  }
-.tetimonial-profile h5{
-  
-  font-size: 0.3rem;
- color: #A2D6F9;
-    margin: 5px;
-    min-width:fit-content;
-
-  }
-  .tetimonial-profile img {
-  justify-self: center;
-    align-self: center;
-    width: 3rem;
-    border-radius: 60%;
-    grid-column-start: 3;
-    grid-column-end: 5;
-    
-  
-  }
-  
-.tetimonial-emoji5 {
-
-  grid-column-start: 6;
-  grid-column-end: 6;
-
-align-self: right;
-text-align:end
-
-
-  
-  }
- 
-/* ------------------------------ Services ------------------------------ */
-.our-service{
-display:grid;
-grid-template-columns: repeat(3,1fr);
-gap:1.2rem;
-
-width: 2rem;
-line-height: 1.5rem;
-font-weight: 400;
-
-
-
-}
-.service-head{
+.tetimonial-emoji3 {
   grid-column-start: 1;
   grid-column-end: 3;
- 
-padding: 5px;
-  justify-self: left;
-  margin-bottom:40px;
-  
-
+  align-self: left;
 
 }
 
-#interface-design{
- 
+.tetimonial-profile {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin: 15px auto;
+  color: #ffff;
+  width: 100%;
+}
+
+.tetimonial-profile p {
+  color: white;
+  font-size: 0.2rem;
+}
+
+.tetimonial-profile h5 {
+  font-size: 0.3rem;
+  color: #A2D6F9;
+  margin: 5px;
+  min-width: fit-content;
+
+}
+
+.tetimonial-profile img {
+  justify-self: center;
+  align-self: center;
+  width: 3rem;
+  border-radius: 60%;
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.tetimonial-emoji5 {
+  grid-column-start: 6;
+  grid-column-end: 6;
+  align-self: right;
+  text-align: end
+}
+
+/* ------------------------------ Services ------------------------------ */
+.our-service {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  width: 40rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+.our-service>* {
+  width: fit-content;
+  overflow: hidden;
+}
+
+.service-head {
+  grid-auto-columns: 1;
+  padding: 20px auto auto auto;
+  margin: 10px auto 10px 2px;
+}
+
+#interface-design {
   grid-column-end: 2;
   background-color: #ffffff;
   padding: 20px;
 }
-#experience-design{
-padding: 20px;
- background-color: #ffffff;
 
+#experience-design {
+  padding: 20px;
+  background-color: #ffffff;
 }
-#app-dev{
-padding: 20px;
- background-color: #ffffff;
 
+#app-dev {
+  padding: 20px;
+  background-color: #ffffff;
 }
 
 /* ------------------------------ Questions form ------------------------------ */
+#question-form {
+  background-color: #FFC600;
+  height: 190px;
+  margin: 30px auto;
+  text-align: center;
+  padding-top: 30px;
 
-/* Your CSS code goes here */
+}
+
+#subscriber-form img {
+
+  position: relative;
+  top: 10px;
+  left: 50px;
+}
+
+#email {
+  width: 41%;
+  height: 40px;
+  padding-left: 50px;
+
+}
+
+button {
+  background-color: #072ac8;
+  width: 10%;
+  height: 40px;
+  color: #ffffff
+}
+
+
+
 
 /* ------------------------------ Footer ------------------------------ */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(10, 29%);
+  gap: 0.8rem;
+
+
+}
+
+.address {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#foot-nav-top>* {
+  grid-column-start: 3;
+  padding: 3px;
+  text-decoration: none;
+  line-height: 1.7em;
+  text-decoration: none;
+  font-size: 0.8em;
+
+}
+
+#foot-nav-base>* {
+  grid-column-start: 3;
+  padding: 2px;
+  text-decoration: none;
+  line-height: 1.7em;
+  font-size: 0.8em;
+  text-decoration: none;
+
+}
+
+
 
 /* Your CSS code goes here */
 
