@@ -14,14 +14,13 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #f2f4fc;
-  margin: 70px;
-  overflow-x: hidden;
+  /* margin: 70px; */
+
 }
 
 div#container {
   background-color: #f2f4fc;
-
-
+  margin: 0 5px 5px
 }
 
 /* ------------------------------------------------------------------------ */
@@ -134,10 +133,6 @@ div#container {
 .hero {
   grid-column-start: 4;
 
-
-
-
-
 }
 
 #hero {
@@ -197,12 +192,12 @@ div#container {
 #partners {
   width: 10px;
   height: 30px;
-
+  margin: 2px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 1.2rem;
   position: relative;
-  top: 3px;
+  top: 25px;
   animation: 6s infinite linear slidein;
 
 
@@ -210,27 +205,33 @@ div#container {
 
 @keyframes slidein {
   from {
-    left: 0px;
+    left: 200px;
   }
 
   to {
-    left: 140%;
+    left: 0%;
   }
 }
 
 #partners img {
-  width: 5rem;
-  padding-left: 80px;
+  width: 3rem;
+  padding-left: 8px;
 }
+
 
 /* Your CSS code goes here */
 
 /* ------------------------------ Recent projects ------------------------------ */
+#recent-project {
+  margin: 0 auto;
+}
+
 .Project-Summary {
   display: grid;
   gap: 4rem;
   grid-template-columns: repeat(3, 1fr);
   width: 40px;
+
 
 }
 
@@ -257,14 +258,15 @@ div#container {
   background-color: #292E47;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 110%;
-  height: inherit;
+
+  width: 90%;
+  height: 900%;
   display: grid;
   grid-template-columns: repeat(6, 2fr);
 }
 
 .img-size {
-  width: 30%;
+  width: 40px;
 }
 
 div.tetimonial-emoji1 {
