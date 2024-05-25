@@ -38,4 +38,4 @@ for (const mainProject of cleanProject.slice(3)){
         
     }
 };
-projectPage ()
+window.addEventListener("load", projectPage);

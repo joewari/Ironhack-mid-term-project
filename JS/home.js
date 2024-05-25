@@ -18,7 +18,8 @@ const getHomePage = async () => {
                 <img src= "${project.image}" alt="">
                 <h3>${project.name}</h3>
                 <p> ${project.description}</p>
-                <a href="#"> lear more</a>
+                <a href="./HTML/Project.html"> learn more</a>
+             
             </d>
             `;
             content.innerHTML += contentInfo
