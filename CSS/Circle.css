@@ -30,13 +30,14 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #f2f4fc;
-  margin: 10px 50px;
+  margin: 20px 50px;
+
 
 }
 
 div#container {
   background-color: #f2f4fc;
-  margin: 0 5px 5px
+  
 }
 
 /* ------------------------------------------------------------------------ */
@@ -234,40 +235,22 @@ div#container {
   grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
   width: 100%;
-
-
-
-
-
 }
 
 #circle-header-logo {
-
   grid-column: 1;
-
-
 }
-
-.Circle-logo {}
 
 .nav-menu {
   grid-column: 3;
   word-spacing: 0.6rem;
   min-inline-size: 12.5rem;
-
-
-
-
 }
 
 .nav-btn {
   text-decoration: none;
 
   font-size: 1rem;
-
-
-
-
 }
 
 
@@ -380,7 +363,7 @@ div#container {
 /* ------------------------------ Partners ------------------------------ */
 #partners {
   width: 90vw;
-  height: 30vh;
+  height: 5vh;
   margin: 2px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -402,7 +385,7 @@ div#container {
     left: 0%;
   } */
   0% {
-    transform: translateX(-10);
+    transform: translateX(0);
   }
 
   100% {
@@ -428,14 +411,14 @@ div#container {
   display: grid;
   gap: 4rem;
   grid-template-columns: repeat(3, 1fr);
-  width: 40px;
+  width: 100%;
 
 
 }
 
 .project img {
 
-  width: 6rem;
+  width: 100%;
 
 
 
@@ -457,14 +440,14 @@ div#container {
   background-repeat: no-repeat;
   background-size: cover;
 
-  width: 90%;
-  height: 900%;
+  width: 100%;
+  height: 40vh;
   display: grid;
   grid-template-columns: repeat(6, 2fr);
 }
 
 .img-size {
-  width: 40px;
+  width: 60%;
 }
 
 div.tetimonial-emoji1 {
@@ -474,10 +457,11 @@ div.tetimonial-emoji1 {
 
 .Client-testimonial-head {
   color: #ffff;
-  font-size: 0.4rem;
+  font-size: 1rem;
   grid-column-start: 2;
   grid-column-end: 5;
-  text-align: center;
+  text-align:center;
+  align-self: last baseline;
 }
 
 .tetimonial-emoji2 {
@@ -490,7 +474,7 @@ div.tetimonial-emoji1 {
   grid-column-start: 2;
   grid-column-end: 5;
   align-self: center;
-  font-size: 0.4rem;
+  font-size: 1rem;
   text-align: center;
   color: #FFC600;
   padding-top: 30px;
@@ -514,11 +498,11 @@ div.tetimonial-emoji1 {
 
 .tetimonial-profile p {
   color: white;
-  font-size: 0.2rem;
+  font-size: 0.5rem;
 }
 
 .tetimonial-profile h5 {
-  font-size: 0.3rem;
+  font-size: 0.7rem;
   color: #A2D6F9;
   margin: 5px;
   min-width: fit-content;
@@ -545,36 +529,51 @@ div.tetimonial-emoji1 {
 .our-service {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.2rem;
-  width: 40rem;
+  gap: 3.9%;
+  width: 100%;
   line-height: 1.5rem;
   font-weight: 300;
+  margin: 2px;
+ font-size: 1.2rem;
+ 
+
+}
+.our-service img {
+border-radius: 50%;
+width:fit-content;
+background-color: #A2D6F9;
 }
 
-.our-service>* {
-  width: fit-content;
-  overflow: hidden;
-}
 
 .service-head {
-  grid-auto-columns: 1;
-  padding: 20px auto auto auto;
-  margin: 10px auto 10px 2px;
+ font-size: 1.2rem;
+  padding: 10px;
+  margin: 50px 20px 20px 20px;
 }
 
 #interface-design {
-  grid-column-end: 2;
+  padding: 5px;
+  margin: 5px 2px 5px 2px;
   background-color: #ffffff;
-  padding: 20px;
+align-items: center;
+justify-items: center;
+  width: 100%;
 }
 
 #experience-design {
-  padding: 20px;
+  padding: 5px;
+  margin: 5px 2px 5px 2px;
+ 
+  width: 100%;
   background-color: #ffffff;
 }
 
 #app-dev {
-  padding: 20px;
+  padding: 5px;
+  margin: 5px 2px 5px 2px;
+ 
+  width: 100%;
+
   background-color: #ffffff;
 }
 
@@ -582,9 +581,10 @@ div.tetimonial-emoji1 {
 #question-form {
   background-color: #FFC600;
   height: 190px;
-  margin: 30px auto;
+  margin: 100px 10px 50px 10px;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 100px;
+  width:100%;
 
 }
 
@@ -604,7 +604,7 @@ div.tetimonial-emoji1 {
 
 button {
   background-color: #072ac8;
-  width: 10%;
+  width: 20%;
   height: 40px;
   color: #ffffff
 }
@@ -615,7 +615,7 @@ button {
 /* ------------------------------ Footer ------------------------------ */
 .footer {
   display: grid;
-  grid-template-columns: repeat(10, 29%);
+  grid-template-columns: repeat(10, 32%);
   gap: 0.8rem;
 
 
@@ -624,24 +624,25 @@ button {
 .address {
   grid-column-start: 1;
   grid-column-end: 3;
+  font-size: 0.8rem;
 }
 
 #foot-nav-top>* {
-  grid-column-start: 3;
-  padding: 3px;
+  grid-column-start: 4;
+  padding: 2px;
   text-decoration: none;
   line-height: 1.7em;
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 0.7em;
 
 }
 
 #foot-nav-base>* {
-  grid-column-start: 3;
+  grid-column-start: 4;
   padding: 2px;
   text-decoration: none;
   line-height: 1.7em;
-  font-size: 0.8em;
+  font-size: 0.7em;
   text-decoration: none;
 
 }
