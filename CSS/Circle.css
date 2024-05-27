@@ -736,7 +736,15 @@ margin-left: 60%;
 /* ------------------------------ Form ------------------------------ */
 /* Basic Reset */
 
+#form-message{
+  color:#28a428;
+  width: 100%;
+}
 
+#form-error{
+  color:#f70b0b;
+  width: 100%;
+}
 #contact-main h1 {
   text-align: left;
   margin-bottom: 1rem;
