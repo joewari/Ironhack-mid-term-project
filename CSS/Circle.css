@@ -23,21 +23,23 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
 
 }
 
 body {
   font-family: "Roboto", sans-serif;
   background-color: #f2f4fc;
-  margin: 20px 50px;
-
-
+margin:30px auto;
+margin-right: 30%;
+padding: 1px 10px 1px 10px;
+max-width: 90vw;
+width: 90%;
 }
 
 div#container {
   background-color: #f2f4fc;
-  
+
 }
 
 /* ------------------------------------------------------------------------ */
@@ -234,11 +236,12 @@ div#container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
+  max-width: 90vw;
   width: 100%;
 }
 
 #circle-header-logo {
-  grid-column: 1;
+  grid-column: 2;
 }
 
 .nav-menu {
@@ -264,7 +267,7 @@ div#container {
   max-height: 2rem;
   background-color: #072ac8;
   text-align: center;
-
+border: none;
   border-radius: 5px;
 
 
@@ -286,15 +289,12 @@ div#container {
 /* ------------------------------ Intro ------------------------------ */
 .intro {
   display: grid;
-
   grid-template-columns: repeat(3, 2fr);
   gap: 1.3rem;
-
-
 }
 
 .content {
-  grid-column-start: 2;
+  grid-column-start: 1;
   min-width: 14rem;
   line-height: 1.5rem;
   font-size: 0.9rem;
@@ -321,18 +321,21 @@ div#container {
 
 #card {
 
+  display: none;
   align-items: center;
   position: relative;
   width: 5rem;
-  bottom: 190px;
+  bottom: -80px;
   right: 40px;
+  z-index: 1;
 }
 
 
 #thumb {
+  display: none;
   position: relative;
-  top: -140px;
-  right: -40px;
+  top: -49px;
+  right: -49px;
   width: 5rem;
 
 
@@ -363,7 +366,7 @@ div#container {
 /* ------------------------------ Partners ------------------------------ */
 #partners {
   width: 90vw;
-  height: 5vh;
+  height: 2vh;
   margin: 2px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -441,13 +444,13 @@ div#container {
   background-size: cover;
 
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   display: grid;
   grid-template-columns: repeat(6, 2fr);
 }
 
 .img-size {
-  width: 60%;
+  width: 4rem;
 }
 
 div.tetimonial-emoji1 {
@@ -580,11 +583,11 @@ justify-items: center;
 /* ------------------------------ Questions form ------------------------------ */
 #question-form {
   background-color: #FFC600;
-  height: 190px;
-  margin: 100px 10px 50px 10px;
+  height: 50vh;
+  margin: 60px 10px 60px 16px;
   text-align: center;
-  padding-top: 100px;
-  width:100%;
+  padding-top: 150px;
+  width:98%;
 
 }
 
@@ -859,33 +862,145 @@ textarea {
 /* ------------------------------ START MEDIA QUERIES ------------------------------ */
 /* --------------------------------------------------------------------------- */
 
-/* ------------------------- Smaller than 990px (tablet) ------------------------- */
-@media (max-width: 990px) {
+@media (min-width: 770px) {
   /* Your CSS code goes here */
+  .intro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:9.9%;
+  }
+  
+  .content {
+    grid-column-start: 1;
+    max-width: 100%;
+    width:30vw;
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+  padding: 20px;
+  
+  }
+  
+  .hero {
+    grid-column-start: 4;
+  
+  }
+  
+  #hero {
+   
+    position: relative;
+    left: -250px;
+    top: -21px;
+    width: 30rem;
+    height: 30rem;
+    align-items: center;
+  
+  
+  
+  }
+  
+  #card {
+  
+    align-items: center;
+    position: relative;
+    width: 17rem;
+    bottom: 220px;
+    right: 50px;
+    z-index: 1;
+  }
+  
+  
+  #thumb {
+    position: relative;
+    top: -140px;
+    right: -290px;
+    width: 17rem;
+  
+  
+    align-items: center;
+  
+  
+  }
 }
-
-/* ------------------------- Smaller than 766px (mobile) ------------------------- */
-@media (max-width: 766px) {
-  /* Your CSS code goes here */
+@media (min-width: 400px) {
+  .intro {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 1.3rem;
+  }
+  
+  .content {
+    grid-column-start: 1;
+    min-width: 14rem;
+    line-height: 1.5rem;
+    font-size: 110%;
+  
+  
+  }
+  
+  .hero {
+    grid-column-start: 4;
+  
+  }
+  
+  #hero {
+    display: grid;
+    position: relative;
+    left: -30px;
+    top: -10px;
+    width: 10rem;
+    height: 10rem;
+    align-items: center;
+  
+  
+  
+  }
+  
+  #card {
+  display:grid;
+    align-items: center;
+    position: relative;
+    width: 5rem;
+    bottom: -80px;
+    right: 40px;
+    z-index: 1;
+  }
+  
+  
+  #thumb {
+    display:grid;
+    position: relative;
+    top: -49px;
+    right: -49px;
+    width: 5rem;
+  
+  
+    align-items: center;
+  
+  
+  }
+  
+  #content-btn1 {
+    color: #ffff;
+    background-color: #072ac8;
+    padding: 3px;
+    border-radius: 4px;
+    text-decoration: none;
+  
+  
+  }
+  
+  .content-button a {
+    text-decoration: none;
+  
+  }
+  
+  .article p {
+    font-size: 0.5vh;
+  }
+  #email {
+    width: 50%;
+    height: 4rem;
+    padding-left: 50px;
+    margin-top: 1rem;
+  }
 }
-
-/* ------------------------------ Hamburguer menu ------------------------------ */
-
-/* Your CSS code goes here */
-
-/* ------------------------------ Alert ------------------------------ */
-
-/* Your CSS code goes here */
-
-/* ------------------------------ Sticky scroll bar ------------------------------ */
-
-/* Your CSS code goes here */
-
-/* --------------------------------------------------------------------------- */
-/* ------------------------------ END MEDIA QUERIES ------------------------------ */
-/* --------------------------------------------------------------------------- */
-
-/* -------- */
-/* -------- */
-/* -------- */
-/* -------- */

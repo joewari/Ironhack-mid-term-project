@@ -28,7 +28,8 @@ for (const mainProject of cleanProject.slice(3)){
         </div>
     </div>
     `;
-    projectDisplay.innerHTML +=DomProjectDisplay
+    projectDisplay.innerHTML =DomProjectDisplay
+
 }
 
 
